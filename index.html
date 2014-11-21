@@ -3,23 +3,24 @@
 <html xmlns="http://www.w3.org/1999/xhtml" >
 
     <head>
-      <title>Export your files easily</title>
+        <title>Export your files easily</title>
 
-      <!--CSS-->
-      <link rel="stylesheet" href="css/style.css">
-      <link rel="stylesheet" href="css/styles.css">
+        <!--CSS-->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/dropzone.css">
+        
+        <!--ICONE-->
 
-      <!--ICONE-->
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-      <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <!--JQUERY-->
+        <script src="js/jquery-1.11.0.min.js"></script>
+        <script src="js/jquery-migrate-1.2.1.min.js"></script>
 
-      <!--JQUERY-->
-      <script src="js/jquery-1.11.0.min.js"></script>
-      <script src="js/jquery-migrate-1.2.1.min.js"></script>
-
-      <!--JAVASCRIPT-->
-      <script src="js/script.js"></script>
+        <!--JAVASCRIPT-->
+        <script src="js/script.js"></script>
 
     </head>
 
@@ -44,9 +45,9 @@
             </div>
 
             <form id="sign_form" action="" method="get">
-                  <input type="text" placeholder="Username">
-                  <input type="password" placeholder="Password">
-                  <button type="button" id="button_sign">Submit</button>
+                <input type="text" placeholder="Username" />
+                <input type="password" placeholder="Password" />
+                <button type="button" id="button_sign">Submit</button>
             </form>
 
             <div class="logs" id="logged_in">
@@ -69,18 +70,21 @@
             to your friend thanks to their e-mail adress</p>
             <p>If you an unlimited access please sign up and select our Premium offer.</p>
             </br>
-            <button type="button" id="button_centre">Sign Up</button>
+            <button type="button" class="button_centre">Sign Up</button>
         </div>
 
         <div id="send_form">
-            <p>Your files will be stored in our database and will completely remain confidential.</p>
-            <form action="" method="get">
-                <input class="input_form" type="text" name="name" placeholder="Type your receiver's adress ..."><br>
-                <input class="input_form" type="file" name="userFile" placeholder="Select a file ..."><br>
-                <input type="submit" name="upload_btn" value="Let's Go !">
-            </form>
-        <div>
+            <p><span class="icon-attention"></span>Your files will be stored in our database 
+            and will <b>completely</b> remain <b>confidential</b>.</p>
+<form action="/file-upload" class="dropzone">
+  <div class="fallback">
+    <input name="file" type="file" multiple />
+  </div>
+</form>
+        </div>
 
+    <script src="js/dropzone.js"></script>
+            
     </body>
 
 </html>

@@ -218,7 +218,7 @@ html, body{
 #infos{
     position: absolute;
     width: 1000px;
-    height: 500px;
+    height: 460px;
     top: 18%;
     left: 13%;
     padding: 2%;
@@ -245,7 +245,7 @@ html, body{
     font-size: 2em;
 }
 
-#button_centre{
+.button_centre{
     font-family: "robotoLight";
     width: 200px;
     height: 80px;
@@ -261,14 +261,14 @@ html, body{
     transition: 0.7s;
 }
 
-#button_centre:hover{
+.button_centre:hover{
     background-color: #1ABC9C;
 }
 
 #send_form{
     position: absolute;
     width: 1000px;
-    height: 500px;
+    height: 460px;
     top: -100%;
     left: 13%;
     padding: 2%;
@@ -281,7 +281,15 @@ html, body{
 }
 
 #send_form p{
-    
+    color: black;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+#send_form span:before{
+    color: #1ABC9C;
+    padding: 20px;
+    line-height: normal;
 }
 
 #send_form form{
@@ -300,4 +308,20 @@ html, body{
     border: 1px solid white;
     border-radius: 10px 10px;
     font-size: 1.5em;
+}
+
+#upload_back {
+    width: 600px;
+    height: 50px;
+    background: url('../img/add.png') no-repeat;
+    background-size: 5%;
+}
+
+#upload_back input {
+    text-align: center;
+    width:600px;
+    height: 50px;
+    font-size: 1.5em;
+    line-height: 0px;
+    font-family: "robotoItalic;
 }
