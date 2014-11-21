@@ -1,3 +1,86 @@
-<html>
-	<p>Test</p>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+
+    <head>
+      <title>Export your files easily</title>
+
+      <!--CSS-->
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/styles.css">
+
+      <!--ICONE-->
+
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+      <!--JQUERY-->
+      <script src="js/jquery-1.11.0.min.js"></script>
+      <script src="js/jquery-migrate-1.2.1.min.js"></script>
+
+      <!--JAVASCRIPT-->
+      <script src="js/script.js"></script>
+
+    </head>
+
+    <body>
+
+        <div id="background"></div>
+
+        <div id="top_menu">
+
+            <div id="menu_logo">
+                <span class="icon-rocket">Rocket-File</span>
+            </div>
+
+            <div class="logs" id="not_logged">
+                <div id="sign_up">
+                    <p>Sign Up</p>
+                </div>
+
+                <div id="sign_in">
+                    <p>Sign In</p>
+                </div>
+            </div>
+
+            <form id="sign_form" action="" method="get">
+                  <input type="text" placeholder="Username">
+                  <input type="password" placeholder="Password">
+                  <button type="button" id="button_sign">Submit</button>
+            </form>
+
+            <div class="logs" id="logged_in">
+                <div id="user_img"></div>
+                <div id="choice_tab">
+                    <p>Welcome</p><img src="img/arrowD.png">
+                    <ul>
+                        <li>Profile</li>
+                        <li>Settings</li>
+                        <li>Log Out</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="infos">
+            <p>Welcome to&nbsp;&nbsp;<span class="icon-rocket">Rocket-File</span>&nbsp;&nbsp;!</p>
+            <p>Rocket-File is an export interface where you can send any file you want
+            to your friend thanks to their e-mail adress</p>
+            <p>If you an unlimited access please sign up and select our Premium offer.</p>
+            </br>
+            <button type="button" id="button_centre">Sign Up</button>
+        </div>
+
+        <div id="send_form">
+            <p>Your files will be stored in our database and will completely remain confidential.</p>
+            <form action="" method="get">
+                <input class="input_form" type="text" name="name" placeholder="Type your receiver's adress ..."><br>
+                <input class="input_form" type="file" name="userFile" placeholder="Select a file ..."><br>
+                <input type="submit" name="upload_btn" value="Let's Go !">
+            </form>
+        <div>
+
+    </body>
+
 </html>

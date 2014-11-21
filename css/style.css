@@ -1,0 +1,303 @@
+@font-face{
+        font-family: 'robotoLight';
+        src: url('../fonts/Roboto-Light.ttf') format('truetype');
+}
+
+@font-face{
+        font-family: 'robotoItalic';
+        src: url('../fonts/Roboto-Italic.ttf') format('truetype');
+}
+
+@font-face{
+        font-family: 'Pacifico';
+        src: url('../fonts/Pacifico.ttf') format('truetype');
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#background{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0%;
+    left: 0%;
+    background-image: url('../img/back1.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+#top_menu{
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    right: 0;
+    top: 0;
+    background-color: #2C3E50;
+    z-index: 70;
+}
+
+#menu_logo{
+    position: absolute;
+    font-family: "Pacifico";
+    width: 230px;
+    height: 60px;
+    transition: 0.7s;
+    cursor: pointer;
+    z-index: 15;
+}
+
+#menu_logo span{
+    width: 230px;
+    height: 60px;
+    font-size: 2em;
+    color: white;
+    text-align: center;
+    vertical- align: middle;
+}
+
+.logs{
+    position: absolute;
+    width: 250px;
+    height: 60px;
+    right: 0;
+    top: 0;
+    line-height: 60px;
+    z-index: 15;
+}
+
+#sign_up{
+    width: 122.5px;
+    font-family: "robotoLight";
+    font-size: 1.5em;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#sign_up p:hover{
+    background-color: #34495E;
+}
+
+#sign_in{
+    width: 122.5px;
+    font-family: "robotoLight";
+    font-size: 1.5em;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#sign_in p:hover{
+    background-color: #34495E;
+}
+
+#sign_up p, #sign_in p{
+    line-height: 60px;
+    margin: 0;
+    color: white;
+    background-color: #2C3E50;
+    transition: 0.7s;
+}
+
+#sign_form{
+    position: absolute;
+    width:500px;
+    height: 60px;
+    right: -35%;
+    float: right;
+    line-height: 60px;
+}
+
+#sign_form input{
+    font-family: "robotoItalic";
+    display: inline-block;
+    width: 150px;
+    height: 20px;
+    padding: 4px;
+    padding-left: 10px;
+    margin-right: 3%;
+    border: 1px solid white;
+    border-radius: 10px 10px;
+    font-size: 1em;
+}
+
+#button_sign{
+    font-family: "robotoLight";
+    display: inline-block;
+    width: 90px;
+    height: 30px;
+    padding: 4px;
+    border: none;
+    background-color: #16A085;
+    font-size: 1em;
+    color: white;
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+#button_sign:hover{
+    background-color: #1ABC9C;
+}
+
+#logged_in{
+    display: none;
+}
+
+#user_img{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 0;
+    right: 195px;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    background-image: url('../img/user.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#choice_tab{
+    position: absolute;
+    width: 195px;
+    height: 60px;
+    top: 0;
+    right: 0;
+    font-family: "robotoLight";
+    color: white;
+    background-color: #34495E;
+}
+
+#choice_tab p{
+    display: inline-block;
+    margin: 0;
+    padding-right: 10%;
+    font-size: 1.5em;
+    line-height: 60px;
+    transition: 0.7s;
+    cursor: pointer;
+}
+
+#choice_tab img{
+    width: auto;
+    height: 30px;
+    margin-bottom: 5px;
+    vertical-align: middle;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#choice_tab ul{
+    position: absolute;
+    width: 195px;
+    top: 60px;
+    margin: 0;
+    padding: 0;
+    display: none;
+    background-color: #2c3e50;
+    z-index: 16;
+}
+
+#choice_tab ul li{
+    font-size: 1.5em;
+    line-height: 60px;
+    list-style: none;
+    cursor: pointer;
+    border-top: 1px solid white;
+}
+
+#choice_tab ul li:hover{
+    background-color: #34495E;
+}
+
+#infos{
+    position: absolute;
+    width: 1000px;
+    height: 500px;
+    top: 18%;
+    left: 13%;
+    padding: 2%;
+    font-family: "robotoLight";
+    background-color: white;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 10px 10px;
+    border: 2px solid #34495E;
+    z-index: 10;
+}
+
+#infos span{
+    font-family: "Pacifico";
+    color: #34495E;
+}
+
+#infos span:before{
+    color: #34495E;
+}
+
+#infos p{
+    color: black;
+    padding-left: 5%;
+    font-size: 2em;
+}
+
+#button_centre{
+    font-family: "robotoLight";
+    width: 200px;
+    height: 80px;
+    padding: 4px;
+    margin: 0 auto;
+    display: block;
+    outline: 0;
+    border: none;
+    background-color: #16A085;
+    font-size: 1.7em;
+    color: white;
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+#button_centre:hover{
+    background-color: #1ABC9C;
+}
+
+#send_form{
+    position: absolute;
+    width: 1000px;
+    height: 500px;
+    top: -100%;
+    left: 13%;
+    padding: 2%;
+    font-family: "robotoLight";
+    background-color: white;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 10px 10px;
+    border: 2px solid #34495E;
+    z-index: 10;
+}
+
+#send_form p{
+    
+}
+
+#send_form form{
+    width: 620px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.input_form{
+    font-family: "robotoItalic";
+    width: 600px;
+    height: 50px;
+    padding: 4px;
+    padding-left: 10px;
+    margin-bottom: 4%;
+    border: 1px solid white;
+    border-radius: 10px 10px;
+    font-size: 1.5em;
+}
